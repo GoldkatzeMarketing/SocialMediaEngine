@@ -1,0 +1,19 @@
+# Video Pipeline Dependencies
+
+# Core
+anthropic>=0.40.0
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# Voice
+elevenlabs>=1.0.0
+
+# Audio/Video Processing
+faster-whisper>=1.0.0
+Pillow>=10.0.0  # für Thumbnail-Frame-Extraction
+
+# Optional: Klare CLI Output
+rich>=13.0.0
+
+# Dev
+pytest>=7.0.0
