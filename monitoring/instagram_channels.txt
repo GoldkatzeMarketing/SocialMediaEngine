@@ -1,0 +1,9 @@
+# Instagram Channels to Monitor
+# Format: eine URL pro Zeile. Zeilen mit # sind Kommentare.
+# Wird vom Apify-Scraper täglich abgefragt. Neue Reels seit Starttag triggern die Pipeline.
+
+https://www.instagram.com/sebastiankauffmann
+https://www.instagram.com/chrizzatsu
+https://www.instagram.com/simon.saysai
+https://www.instagram.com/florent_preusser
+https://www.instagram.com/nick_saraev
