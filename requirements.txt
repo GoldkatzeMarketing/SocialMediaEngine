@@ -10,9 +10,15 @@ elevenlabs>=1.0.0
 
 # Audio/Video Processing
 faster-whisper>=1.0.0
-Pillow>=10.0.0  # für Thumbnail-Frame-Extraction
+Pillow>=10.0.0
 
-# Optional: Klare CLI Output
+# Monitoring + Scraping
+apify-client>=1.7.0
+
+# Notifications
+python-telegram-bot>=21.0
+
+# CLI Output
 rich>=13.0.0
 
 # Dev

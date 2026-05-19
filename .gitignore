@@ -1,0 +1,33 @@
+# Secrets
+.env
+.env.local
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Pipeline outputs
+runs/*/
+!runs/.gitkeep
+
+# Monitoring state
+monitoring/seen.json
+monitoring/downloads/
+monitoring/transcripts/
+monitoring/cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
