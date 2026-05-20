@@ -53,6 +53,28 @@ python smoke_tests/test_07_ffmpeg.py
 
 **Gesamtkosten Smoke-Test-Run:** ~$0.03
 
+## End-to-End-Test (Inspiration → fertiges Sophie-MP4)
+
+```bash
+python smoke_tests/test_e2e_inspiration.py
+```
+
+Was passiert:
+
+1. Erstes Profil aus `monitoring/instagram_channels.txt`
+2. Apify scraped neuestes Reel
+3. Whisper transkribiert das Reel (= Inspiration)
+4. Claude generiert ein Sophie-Skript zum gleichen Thema
+5. HeyGen rendert Avatar-Video (~4 min)
+6. Pillow rendert statische Top-Karte (40% Brand-Layout)
+7. ffmpeg stacked 40/60 + Whisper word-level Captions als ASS-Burn
+8. Telegram bekommt das fertige MP4
+
+**Output:** `runs/{timestamp}_smoke_{profile}/final.mp4`
+**Kosten:** ~$0.40, **Dauer:** ~10-15 min
+
+Voraussetzung: Tests 1-7 sind alle gruen.
+
 ## Bei Fehler
 
 - Output durchlesen – jeder Test sagt was fehlt
